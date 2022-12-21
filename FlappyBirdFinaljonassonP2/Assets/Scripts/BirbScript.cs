@@ -37,6 +37,7 @@ public class BirbScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        rb2d.velocity = Vector2.zero;
         isDead = true;
         
         anim.SetTrigger("Die");
